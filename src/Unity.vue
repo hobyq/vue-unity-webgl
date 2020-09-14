@@ -1,5 +1,4 @@
 <template>
-  <div class="webgl-content">
     <div :id="containerId" v-bind:style="{ width: width + 'px', height: height + 'px' }"></div>
     <div v-if="loaded == false">
       <div class="unity-loader">
@@ -7,9 +6,6 @@
           <div class="fill" v-bind:style="{ width: progress * 100 + '%'}"></div>
         </div>
       </div>
-    </div>
-    <div class="footer" v-if="hideFooter !== true">
-      <a class="fullscreen" @click.prevent="fullscreen">Fullscreen</a>
     </div>
   </div>
 </template>
